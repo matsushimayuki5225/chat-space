@@ -1,0 +1,212 @@
+.chat-side{   
+  background-color:white;
+  width:300px;
+  float:left;
+
+  .side-header{
+    background-color: #253141;
+    height:100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    .side-header__box{
+      background-color: #333333;
+      height: 20px;
+      width: 100%;
+      font-weight: bold;
+      display: flex;
+      justify-content:space-between;
+
+        .side-header__box__namebar{  
+          font-size: 16px;
+          color:#ffffff
+        }
+        .side-header__box__icon{
+          display:flex;
+          justify-content:flex-end;
+          list-style: none;
+          .icon1 {
+            color: white;
+            margin-right: 5px;
+          }
+          .icon2 {
+            color: white;
+          }
+          
+        }
+        
+    }
+  }
+}
+
+
+  .group{
+    background-color: #2f3e51; 
+    height: calc(100vh - 100px);
+    
+    .group-groups{
+      padding: 20px;
+      margin-bottom: 40px;
+
+      .group-groups__name{
+        color:#ffffff;
+        font-size:15px;
+        margin-bottom: 5px;
+
+      }
+      .group-groups__message{
+        color: #ffffff;
+        font-size: 11px;
+      }
+
+    }
+  }
+
+.chat-home{
+    background-color:white ;
+    width:calc(100vw - 300px);
+    float:right;
+    
+   
+
+  .chat-home-chat-main-top{
+    background-color: #ffffff;
+    height: 100px;
+    margin-left:40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+   
+    
+    .chat-home-chat-main-top__left{
+      height: 64px;
+      margin-top: 35px;
+      
+      
+     
+      .chat-home-chat-main-top__left__title{
+        color: #333333;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .chat-home-chat-main-top__left__member{
+        color: #999999;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 15px;
+       
+        .chat-home-chat-main-top__left__member__name{
+          margin-left: 10px;
+        }
+      }
+    } 
+
+    .chat-home-chat-main-top_right{
+      border: solid 1px #38AEF0;
+      color:#38AEF0;
+      margin-top:30px ;
+      line-height: 40px;
+      padding: 0 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  .chat-home-chat-main{
+    background-color: #fafafa;
+    height: calc(100vh - 190px);
+
+
+    .chat-home-chat-main__message{
+      padding: 40px;
+      
+
+      .chat-home-chat-main__message__title{
+        display: flex;
+        justify-content: flex-start;
+      
+
+        .chat-home-chat-main__message__title__name{
+          color:#333333;
+          font-size: 14px;
+          font-weight: bold;
+        }
+        
+        .chat-home-chat-main__message__title__day{
+          color: #999999;
+          font-size: 12px;
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 10px;
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+
+      .chat-home-chat-main__message__text{
+        color:#434A54;
+        font-size: 14px;
+        margin-bottom:10px;
+      }
+    }
+  }
+  .chat-home-chat-bottom{
+    background-color: #d2d2d2;
+    height: 90px;
+    margin: 0em 0em 0em;
+    
+    
+
+    .chat-home-chat-bottom__box{
+      box-sizing: border-box;
+      padding: 20px 40px;
+      display: flex;
+      
+      
+      
+      .chat-home-chat-bottom__box__class__text{
+        width: 120%;
+        height: 50px;
+        position: relative;
+    
+      }
+
+      .chat-home-chat-bottom__box__class__image{
+        display: flex;
+        justify-content: space-between;
+        width:50px;
+        position: absolute;
+        right: 150px;
+        bottom: 35px;
+        
+      }
+        .icon{
+          
+        }  
+
+        .file{
+          display: none;
+        }
+    }  
+    .chat-home-chat-bottom__box__class__button{
+      width:150px;
+      height:50px;
+      color:white;
+      background-color: #38AEF0;
+      margin-left: 30px;
+      
+    }
+  }
+}
+
+
+
+
+    
+      
+     
+      
+        
