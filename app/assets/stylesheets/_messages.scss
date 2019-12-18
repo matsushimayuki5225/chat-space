@@ -10,7 +10,7 @@
     align-items: center;
     padding: 0 20px;
 
-    .side-header__box{
+    &__box{
       background-color: #333333;
       height: 20px;
       width: 100%;
@@ -18,11 +18,11 @@
       display: flex;
       justify-content:space-between;
 
-        .side-header__box__namebar{  
+        &__namebar{  
           font-size: 16px;
           color:#ffffff
         }
-        .side-header__box__icon{
+        &__icon{
           display:flex;
           justify-content:flex-end;
           list-style: none;
@@ -45,17 +45,17 @@
     background-color: #2f3e51; 
     height: calc(100vh - 100px);
     
-    .group-groups{
+    &-groups{
       padding: 20px;
       margin-bottom: 40px;
 
-      .group-groups__name{
+      &__name{
         color:#ffffff;
         font-size:15px;
         margin-bottom: 5px;
 
       }
-      .group-groups__message{
+      &__message{
         color: #ffffff;
         font-size: 11px;
       }
@@ -70,7 +70,7 @@
     
    
 
-  .chat-home-chat-main-top{
+  &-chat-main-top{
     background-color: #ffffff;
     height: 100px;
     margin-left:40px;
@@ -79,18 +79,18 @@
     justify-content: space-between;
    
     
-    .chat-home-chat-main-top__left{
+    &__left{
       height: 64px;
       margin-top: 35px;
       
       
      
-      .chat-home-chat-main-top__left__title{
+      &__title{
         color: #333333;
         font-size: 20px;
         margin-bottom: 15px;
       }
-      .chat-home-chat-main-top__left__member{
+      &__member{
         color: #999999;
         font-size: 12px;
         display: flex;
@@ -98,13 +98,13 @@
         justify-content: flex-start;
         margin-top: 15px;
        
-        .chat-home-chat-main-top__left__member__name{
+        &__name{
           margin-left: 10px;
         }
       }
     } 
 
-    .chat-home-chat-main-top_right{
+    &_right{
       border: solid 1px #38AEF0;
       color:#38AEF0;
       margin-top:30px ;
@@ -120,22 +120,22 @@
     height: calc(100vh - 190px);
 
 
-    .chat-home-chat-main__message{
+    &__message{
       padding: 40px;
       
 
-      .chat-home-chat-main__message__title{
+      &__title{
         display: flex;
         justify-content: flex-start;
       
 
-        .chat-home-chat-main__message__title__name{
+        &__name{
           color:#333333;
           font-size: 14px;
           font-weight: bold;
         }
         
-        .chat-home-chat-main__message__title__day{
+        &__day{
           color: #999999;
           font-size: 12px;
           display: flex;
@@ -146,7 +146,7 @@
         }
       }
 
-      .chat-home-chat-main__message__text{
+      &__text{
         color:#434A54;
         font-size: 14px;
         margin-bottom:10px;
@@ -160,27 +160,27 @@
     
     
 
-    .chat-home-chat-bottom__box{
+    &__box{
       box-sizing: border-box;
       padding: 20px 40px;
       display: flex;
       
       
       
-      .chat-home-chat-bottom__box__class__text{
+      &__class__text{
         width: 120%;
         height: 50px;
         position: relative;
     
       }
 
-      .chat-home-chat-bottom__box__class__image{
+      &__class__image{
         display: flex;
         justify-content: space-between;
         width:50px;
         position: absolute;
         right: 150px;
-        bottom: 35px;
+        bottom: 32px;
         
       }
         .icon{
@@ -191,7 +191,7 @@
           display: none;
         }
     }  
-    .chat-home-chat-bottom__box__class__button{
+    &__box__class__button{
       width:150px;
       height:50px;
       color:white;
@@ -201,12 +201,3 @@
     }
   }
 }
-
-
-
-
-    
-      
-     
-      
-        
