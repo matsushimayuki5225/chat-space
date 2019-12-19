@@ -26,40 +26,39 @@
           display:flex;
           justify-content:flex-end;
           list-style: none;
-          .icon1 {
+          &__icon1 {
             color: white;
             margin-right: 5px;
           }
-          .icon2 {
+          &__icon2 {
             color: white;
           }
           
         }
-        
-    }
+    }   
   }
 }
 
 
-  .group{
+  .groups{
     background-color: #2f3e51; 
     height: calc(100vh - 100px);
     
-    &-groups{
+    .group{
       padding: 20px;
       margin-bottom: 40px;
 
-      &__name{
+      .group__name{
         color:#ffffff;
         font-size:15px;
         margin-bottom: 5px;
 
       }
-      &__message{
+      .group__message{
         color: #ffffff;
         font-size: 11px;
       }
-
+      
     }
   }
 
