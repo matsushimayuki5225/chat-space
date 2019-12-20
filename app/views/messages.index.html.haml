@@ -1,0 +1,10 @@
+.main-content
+  .chat-header
+    .chat-header--left
+      %h2 #{@group.name}
+      .chat-header__users
+        Members:
+        - @group.users.each do |user|
+          %span.chat-header__user #{user.name}
+    .chat-header--right
+      = link_to 'Edit', edit_chat_group_path(@chat_group), class: 'chat-header__edit-btn'

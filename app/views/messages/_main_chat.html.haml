@@ -2,29 +2,24 @@
   .chat-home-chat-main-top
     .chat-home-chat-main-top__left
       %h.chat-home-chat-main-top__left__title
-        タイトル
+        = @group.name
       %ul.chat-home-chat-main-top__left__member
         member:
         %li.chat-home-chat-main-top__left__member__name
-          ゆきりん
+          - @group.users.each do |user|
+            = user.name
     .chat-home-chat-main-top_right
-      Edit 
+      
   .chat-home-chat-main
-    .chat-home-chat-main__message
-      .chat-home-chat-main__message__title
-        %p.chat-home-chat-main__message__title__name
-          ゆきりん
-        %p.chat-home-chat-main__message__title__day
-          2019/12/16(Mon) 14:09:17
-      %p.chat-home-chat-main__message__text
-        aaaa
+    = render @messages
+    -#   - @messages.each do |message|
+    -# = render partial: "messages/message", locals: { message: message }
   .chat-home-chat-bottom
     .chat-home-chat-bottom__box
-      .chat-home-chat-bottom__box__class
-      %input{type:"text",placeholder:"type a messages", class: "chat-home-chat-bottom__box__class__text"}
-        .chat-home-chat-bottom__box__class__image
-          %label{class: "input-box__image"}
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'chat-home-chat-bottom__box__text', placeholder: 'type a message'
+        .chat-home-chat-bottom__box__image
+          = f.label :image, class: 'input-box__image' do
             %i.fa.fa-file-picture-o
-            %input{type: "file", class:"file"}
-      %input{type: "submit",name: "commit",value: "Send",class: "chat-home-chat-bottom__box__class__button"}
-      
+          = f.file_field :image, class: 'file'
+        = f.submit 'Send', class: 'chat-home-chat-bottom__box__bottom'
