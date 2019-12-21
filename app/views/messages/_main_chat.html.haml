@@ -9,11 +9,9 @@
           - @group.users.each do |user|
             = user.name
     .chat-home-chat-main-top_right
-      
+      = link_to 'Edit', edit_group_path(@group.id)
   .chat-home-chat-main
     = render @messages
-    -#   - @messages.each do |message|
-    -# = render partial: "messages/message", locals: { message: message }
   .chat-home-chat-bottom
     .chat-home-chat-bottom__box
       = form_for [@group, @message] do |f|

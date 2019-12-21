@@ -1,29 +1,3 @@
-
--#     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
-
--# .main-content
--#   .chat-header
--#     .chat-header--left
--#       %h2 #{@group.name}
--#       .chat-header__users
--#         Members:
--#         - @group.users.each do |user|
--#           %span.chat-header__user #{user.name}
--#     .chat-header--right
--#       -# = link_to 'Edit', edit_chat_group_path(@chat_group), class: 'chat-header__edit-btn'
--# .chat-home 
--#   .chat-home-chat-main-top
--#     .chat-home-chat-main-top__left
--#       %h.chat-home-chat-main-top__left__title
--#         タイトル
--#       %ul.chat-home-chat-main-top__left__member
--#         member:
--#         %li.chat-home-chat-main-top__left__member__name
--#           ゆきりん
--#     .chat-home-chat-main-top_right
--#       Edit 
-
-
 .chat-home-chat-main__message
   .chat-home-chat-main__message__title
     %p.chat-home-chat-main__message__title__name
