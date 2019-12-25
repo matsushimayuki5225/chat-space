@@ -50,7 +50,9 @@ $('#new_message').on('submit', function(e){
       data: formData,
       dataType: 'json',
       processData: false,
-      
+      contentType: false
+    })
+    .done(function(data){
        var html = buildHTML(data);
        $('.chat-home-chat-main').append(html);
        $('form')[0].reset();
