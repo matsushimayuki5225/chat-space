@@ -88,21 +88,21 @@ $('#new_message').on('submit', function(e){
       })
       .done(function(messages) {
       if (messages.length !== 0) {
-        var insertHTML = '';
-        $.each(messages, function(i, message){
-        insertHTML += buildHTML(message)
-        });
-        $('.chat-home-chat-main').append(insertHTML);
-        $('.chat-home-chat-main').animate({ scrollTop: $('.chat-home-chat-main')[0].scrollHeight});
-        $("#new_message")[0].reset();
-        $(".form__submit").prop("disabled", false);
+      var insertHTML = '';
+      $.each(messages, function(i, message){
+      insertHTML += buildHTML(message)
+      });
+      $('.chat-home-chat-main').append(insertHTML);
+      $('.chat-home-chat-main').animate({ scrollTop: $('.chat-home-chat-main')[0].scrollHeight});
+      $("#new_message")[0].reset();
+      $(".form__submit").prop("disabled", false);
       }
       })
       .fail(function() {
         alert('エラーが発生しました');
       });
     };
-  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages, 7000);
-  };
+      if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+      setInterval(reloadMessages, 7000);
+      };
 });
