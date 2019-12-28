@@ -16,9 +16,9 @@ $(function() {
           </p>
           <img src="${message.image} " class="lower-message__image"> 
         </div> 
-      </div>
+      </div>`
     } else if (message.content) {
-      var html = <div class="chat-home-chat-main__message" data-message-id="${message.id}"> 
+      var html = `<div class="chat-home-chat-main__message" data-message-id="${message.id}"> 
         <div class="chat-home-chat-main__message__title"> 
           <div class="chat-homr-chat-main__message__titie__name">
             message.user_name 
@@ -32,9 +32,9 @@ $(function() {
             message.content 
           </p> 
         </div> 
-      </div>
+      </div>`
     } else if (message.image) {
-      var html = <div class="chat-home-chat-main__message" data-message-id="${message.id}"> 
+      var html = `<div class="chat-home-chat-main__message" data-message-id="${message.id}"> 
         <div class="chat-home-chat-main__message__title"> 
           <div class="chat-home-chat-main__message__title__name">
             message.user_name 
@@ -46,7 +46,7 @@ $(function() {
         <div class="lower-message">
           <img src="${message.image} " class="lower-message__image" >
         </div>
-      </div>
+      </div>`
     };
     return html;
   };
