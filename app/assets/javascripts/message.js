@@ -1,46 +1,49 @@
 $(function() {
   var buildHTML = function(message) {
     if (message.content && message.image) {
-      var html = `<div class="chat-home-chat-main__message" "data-message-id="${message.id}" >
+      var html = `<div class="message" data-message-id="${message.id}">
+      <div class="chat-home-chat-main__message">
         <div class="chat-home-chat-main__message__title">
           <div class="chat-home-chat-main__message__title__name">
-            message.user_name 
+            ${message.user_name} 
           </div> 
           <div class="chat-home-chat-main__message__title__day"> 
-            message.created_at 
+            ${message.created_at}
           </div>
         </div> 
         <div class="lower-message"> 
           <p class="lower-message__content">
-            message.content 
+            ${message.content} 
           </p>
           <img src="${message.image} " class="lower-message__image"> 
         </div> 
       </div>`
     } else if (message.content) {
-      var html = `<div class="chat-home-chat-main__message" data-message-id="${message.id}"> 
+      var html = `<div class="message" data-message-id="${message.id}">
+      <div class="chat-home-chat-main__message"> 
         <div class="chat-home-chat-main__message__title"> 
           <div class="chat-homr-chat-main__message__titie__name">
-            message.user_name 
+            ${message.user_name} 
           </div> 
           <div class="chat-home-chat-main__message__title__day">
-            message.created_at 
+            ${message.created_at} 
           </div> 
         </div>
         <div class="lower-message">
           <p class="lower-message__content">
-            message.content 
+            ${message.content} 
           </p> 
         </div> 
       </div>`
     } else if (message.image) {
-      var html = `<div class="chat-home-chat-main__message" data-message-id="${message.id}"> 
+      var html = `<div class="message" data-message-id="${message.id}">
+      <div class="chat-home-chat-main__message"> 
         <div class="chat-home-chat-main__message__title"> 
           <div class="chat-home-chat-main__message__title__name">
-            message.user_name 
+            ${message.user_name} 
           </div> 
           <div class="chat-home-chat-main__message__title__day">
-            message.created_at 
+            ${message.created_at} 
           </div> 
         </div>
         <div class="lower-message">
